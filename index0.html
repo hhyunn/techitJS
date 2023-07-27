@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체(Object)</title>
+</head>
+<body>
+    <h1>객체(Object)</h1>
+    <script>
+        var person = {  // 여기에 속성이나 메서드를 추가하여 그 안에 정보를 더 넣어줄 수 있음
+            name: 'jocoding',   // 속성 추가
+            sayHello: function() { console.log('hello'); }     // 값에 함수를 넣어주는 메서드를 만듦
+        }
+        console.log(person.name);   // 객체 안에 있는 값 가져오기
+        person.sayHello();  // 메서드를 실행
+    </script>
+</body>
+</html>
+<!--
+    * 객체(Object)
+
+    var person = {
+        name: 'jocoding',
+        age: 20
+    }
+
+    키(key, 속성명) : 값(value, 속성값)
+
+    var person = {
+        name: 'jocoding',
+        age: 20,
+        hobby: ['코딩, '축구', '농구'],     // 배열
+        money: {stock: 10, cash: 1},        // 객체
+        sayHello: function () {
+            console.log('hello');
+        },                              // 함수
+    }
+
+    =
+
+    객체.키;
+        값을 빼올 수 있음
+
+    person.name; ===> jocoding
+
+    var person = {
+        name: 'jocoding',
+        sayHello: function () {
+            console.log('hello');
+        }
+    }
+person.sayHello(); ===> hello;
+
+    =
+    
+    자바스크립트의 모든 것은 객체다
+
+    content.length;
+    document.write();
+    console.log();
+        객체를 사용하는 과정이었음
+-->
